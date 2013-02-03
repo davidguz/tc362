@@ -1,0 +1,93 @@
+1.  Files in /usr/bin directory
+
+--- cd /usr/bin
+--- type "ls -1 | wc -l"
+--- output of "573"
+
+There are 573 files in the /usr/bin directory.
+
+2. Server process with highest memory usage
+
+--- command "top"
+--- shift + m (to list in descending order of memory usage)
+--- process "whoopsie" is using the most memory, 1.7%
+20 minutes later...
+--- process "bash" is using the most memory, 1.5%
+
+
+3. server timezone
+
+--- command "date"
+--- output "Sun Feb  3 21:34:49 UTC 2013"
+
+Timezone is UTC
+
+4.default ubuntu groups
+
+--- command "cat /etc/group"
+---output:
+root:x:0:
+daemon:x:1:
+bin:x:2:
+sys:x:3:
+adm:x:4:
+tty:x:5:
+disk:x:6:
+lp:x:7:
+mail:x:8:
+news:x:9:
+uucp:x:10:
+man:x:12:
+proxy:x:13:
+kmem:x:15:
+dialout:x:20:
+fax:x:21:
+voice:x:22:
+cdrom:x:24:
+floppy:x:25:
+tape:x:26:
+sudo:x:27:
+audio:x:29:
+dip:x:30:
+www-data:x:33:
+backup:x:34:
+operator:x:37:
+list:x:38:
+irc:x:39:
+src:x:40:
+gnats:x:41:
+shadow:x:42:
+utmp:x:43:
+video:x:44:
+sasl:x:45:
+plugdev:x:46:
+staff:x:50:
+games:x:60:
+users:x:100:
+nogroup:x:65534:
+libuuid:x:101:
+crontab:x:102:
+syslog:x:103:
+fuse:x:104:
+messagebus:x:105:
+whoopsie:x:106:
+mlocate:x:107:
+ssh:x:108:
+landscape:x:109:
+netdev:x:110:
+lpadmin:x:111:
+sambashare:x:112:
+
+
+That is 51 groups.  I counted it by hand, though there is probably an easy way to have the computer count it for me.
+
+5. tar file
+
+--- wget http://cl.ly/2F0Q1r2y3K0l/362.tar
+--- 362.tar saved to home directory
+--- "tar -xf 362.tar" (un-tar)
+--- I needed to install php5 to interpret the php file : "sudo apt-get install php5-cli"
+--- command "php5 362.php"
+--- output: "0,1,1,2,3,5,8,13,21,34,55,89,144,233,377,610,987,1597,2584,4181"
+
+This is a fibonacci sequence!
