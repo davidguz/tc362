@@ -1,0 +1,6 @@
+Domains:
+www.davidguz.info
+sub1.davidguz.info
+
+Primary IP:
+166.78.111.237
